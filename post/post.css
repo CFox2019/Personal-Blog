@@ -1,4 +1,5 @@
-@import url("../common/shared.css");
+@import "../common/shared.css";
+@import "../common/date.css";
 
 @media (min-width: 600px) and (max-width: 900px) {
     .post-img {

@@ -1,4 +1,5 @@
-@import url("common/shared.css");
+@import "./common/shared.css";
+@import "./common/date.css";
 
 article {
     margin: 20px auto auto auto;

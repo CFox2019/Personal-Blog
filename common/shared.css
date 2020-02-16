@@ -1,7 +1,7 @@
-@import url("header.css");
-@import url("footer.css");
-@import url("sidebar.css");
-@import url("box.css");
-@import url("container.css");
-@import url("content.css");
-@import url("links.css");
+@import "./header.css";
+@import "./footer.css";
+@import "./sidebar.css";
+@import "./box.css";
+@import "./container.css";
+@import "./content.css";
+@import "./links.css";

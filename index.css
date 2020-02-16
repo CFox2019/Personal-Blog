@@ -1,0 +1,13 @@
+@import url("common/shared.css");
+
+article {
+    margin: 20px auto auto auto;
+}
+
+article p {
+    margin: 6px auto;
+}
+
+.title {
+    font-weight: bold;
+}

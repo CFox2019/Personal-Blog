@@ -1,0 +1,92 @@
+header {
+    display: grid;
+    padding: 20px 28px;
+    grid-area: hd;
+    color: purple;
+    background-color: #f7f7f7;
+    grid-gap: 5px;
+    /* Use grid-template-area to create a mobile layout where each
+    named space occupies its own row */
+    grid-template-areas:
+    "name"
+    "nav";
+}
+
+header h1 {
+    font-family: 'Dancing Script', cursive;
+}
+
+.navigation {
+    grid-area: nav;
+    padding: 28px 5px;
+}
+
+.navigation a:link {
+    background-color: #9b59b6;
+    border: 1px solid #8e44ad;
+    border-radius: 4px;
+    color: #ffffff;
+    padding: 5px 8px;
+    text-decoration: none;
+}
+
+.navigation a:visited {
+    background-color: #9b59b6;
+    border: 1px solid #8e44ad;
+    border-radius: 4px;
+    color: #ffffff;
+    padding: 5px 8px;
+    text-decoration: none;
+}
+
+.navigation a:hover {
+    background-color: #9b59b6;
+    border: 1px solid #8e44ad;
+    border-radius: 4px;
+    color: #ffffff;
+    padding: 5px 8px;
+    text-decoration: underline;
+}
+
+#blog-title {
+    color: #9b59b6;
+    grid-area: name;
+}
+
+#blog-title a:link {
+    text-decoration: none;
+}
+
+#blog-title a:visited {
+    text-decoration: none;
+}
+
+#blog-title a:hover {
+    text-decoration: none;
+}
+
+#blog-title a:active {
+    text-decoration: none;
+}
+
+/* Medium Screens */
+@media (min-width: 600px) and (max-width: 900px) {
+    header {
+        grid-template-columns: 200px 1fr;
+        grid-template-rows: 80px;
+        grid-gap: 10px;
+        grid-template-areas:
+        "name nav";
+    }
+}
+
+/* Large Screens */
+@media (min-width: 901px) {
+    header {
+        grid-template-columns: 200px 1fr;
+        grid-template-rows: 80px;
+        grid-gap: 15px;
+        grid-template-areas:
+        "name nav";
+    }
+}

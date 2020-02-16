@@ -1,0 +1,40 @@
+/* Mobile first */
+.container {
+    display: grid;
+    grid-gap: 5px;
+    /* Use grid-template-area to create a mobile layout where each
+    named space occupies its own row */
+    grid-template-areas:
+    "hd"
+    "main"
+    "sd"
+    "ft";
+}
+
+body {
+    margin: 0px;
+}
+
+/* Medium Screens */
+@media (min-width: 600px) and (max-width: 900px) {
+    .container {
+        grid-template-columns: repeat(4, 1fr) 125px 125px;
+        grid-gap: 10px;
+        grid-template-areas:
+        "hd hd hd hd hd hd"
+        "main main main main sd sd"
+        "ft ft ft ft ft ft";
+    }
+}
+
+/* Large Screens */
+@media (min-width: 901px) {
+    .container {
+        grid-template-columns: repeat(6, 1fr) 150px 150px;
+        grid-gap: 15px;
+        grid-template-areas:
+        "hd hd hd hd hd hd hd hd"
+        "main main main main main main sd sd"
+        "ft ft ft ft ft ft ft ft";
+    }
+}

@@ -1,0 +1,7 @@
+@import url("../common/shared.css");
+
+@media (min-width: 600px) and (max-width: 900px) {
+    .post-img {
+        max-width: 250px;
+    }
+}

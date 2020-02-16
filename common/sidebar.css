@@ -1,0 +1,8 @@
+.sidebar {
+    margin: 8px;
+    grid-area: sd;
+}
+
+.about-img {
+    max-width: 150px;
+}
